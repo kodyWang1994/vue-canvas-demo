@@ -138,6 +138,7 @@ export default {
 #myCanvas {
   border:1px solid;
   margin:3px;
+  cursor: pointer;
 }
 
 .footer {
