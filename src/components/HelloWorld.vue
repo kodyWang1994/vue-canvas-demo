@@ -72,6 +72,7 @@ export default {
       this.ctx.beginPath()
     },
     move (e) {
+      e.preventDefault()
       this.ctx.moveTo(this.x, this.y)
       let x = e.touches[0].pageX - e.touches[0].target.offsetLeft
       let y = e.touches[0].pageY - e.touches[0].target.offsetTop
@@ -94,6 +95,7 @@ export default {
     },
     mouseMove (e) {
       if (this.drawing) {
+        e.preventDefault()
         this.ctx.moveTo(this.x, this.y)
         let x = e.offsetX
         let y = e.offsetY
